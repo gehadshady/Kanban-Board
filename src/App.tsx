@@ -1,9 +1,7 @@
 import Header from "./components/Header";
 import SideMenu from "./components/ٍSideMenu";
 import WorkSpace from "./components/WorkSpace";
-// import data from "./data.json";
 import { useEffect, useState } from "react";
-import type { BoardType as DataContextType } from "@/types";
 import { DataProvider } from "./DataContext";
 
 function App() {
