@@ -79,24 +79,6 @@ const AddNewBoardForm = ({
       });
     }
     toggleDialog(false);
-
-    // setSelectedBoardIndex((prevData) => (prevData < 0 ? 0 : prevData + 1));
-
-    // Clear form fields
-    // nameRef.current!.value = "";
-    // setColumnsArray([{ id: Date.now(), title: "", tasks: [] }]);
-
-    //add new board to data
-    // if (nameRef.current?.value) {
-    //   setData((prevData) => [
-    //     ...(prevData || []),
-    //     {
-    //       id: (prevData?.length || 0) + 1,
-    //       title: nameRef.current?.value || "",
-    //       columns: [],
-    //     },
-    //   ]);
-    // }
   };
 
   return (
@@ -107,7 +89,6 @@ const AddNewBoardForm = ({
           name="boardName"
           required
           defaultValue={isEditMode ? data?.[selectedBoardIndex]?.title : ""}
-          // ref={nameRef}
           placeholder="e.g. Platform Launch"
         />
       </div>

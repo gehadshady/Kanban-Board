@@ -32,17 +32,15 @@ const Header = () => {
       <div className="border-lines-light flex flex-1 items-center justify-between self-stretch border-b pr-6 pl-6">
         <h2 className="text-heading-xl font-bold">Platform Launch</h2>
         <DropDownMenuPrimitive
-          disabled={data?.length == 0}
+          disabled={!Boolean(data?.length)}
           items={{
             edit: {
               label: "Edit Board",
               onClick: onEditBoard,
-              // disabled: data?.length == 0,
             },
             delete: {
               label: "Delete Board",
               onClick: onDeleteBoard,
-              // disabled: data?.length == 0,
             },
           }}
           triggerComponent={() => (
