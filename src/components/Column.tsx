@@ -16,8 +16,6 @@ const Column = ({
   const [onEditMode, setOnEditMode] = useState<boolean>(false);
 
   const addNewTaskHandler = () => {
-    console.log("addNewTaskHandler");
-
     setData((prevData) => {
       if (!prevData) return [];
 

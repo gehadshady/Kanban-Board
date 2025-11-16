@@ -26,7 +26,6 @@ const WorkSpace = () => {
         }
         return board;
       });
-      console.log(updatedData);
 
       return updatedData;
     });

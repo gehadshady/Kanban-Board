@@ -12,7 +12,9 @@ const SideMenu = () => {
   return (
     <>
       <aside className="side-menu border-lines-light -mt-px w-[300px] border-r bg-white font-bold">
-        <p className="text-heading-s px-8 py-4">ALL BOARDS ({data?.length})</p>
+        <p className="text-heading-s px-8 py-4">
+          ALL BOARDS ({data?.length || 0})
+        </p>
         <ul>
           {data?.map((item, index) => (
             <li key={item.id}>

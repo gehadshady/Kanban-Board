@@ -9,7 +9,6 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const { data, setData, selectedBoardIndex, setSelectedBoardIndex } =
     useDataContext();
-  console.log(data?.length);
   const onEditBoard = () => {
     setOpen(true);
   };
